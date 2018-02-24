@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>countDown</title>
+  <script src="../src/countdown.js" charset="utf-8"></script>
+</head>
+<body>
+  <div class="box">
+    <h1 id="box">
+      <span>剩余</span>
+      <span id="day"></span>
+      <span>天</span>
+      <span id="hour"></span>
+      <span>小时</span>
+      <span id="minute"></span>
+      <span>分钟</span>
+      <span id="second"></span>
+      <span>秒</span>
+    </h1>
+  </div>
+  <script>
+      var demo = new zDate.countDown({
+        interval: 1000,                                        // 倒计时时间间隔
+        dayBox: document.getElementById('day'),                // 天数DOM元素
+        hourBox: document.getElementById('hour'),              // 天数DOM元素
+        minuteBox: document.getElementById('minute'),          // 天数DOM元素
+        secondBox: document.getElementById('second'),          // 天数DOM元素
+        nowTime: "2014-01-01 00:00:00",                        // 开始时间 支持时间戳
+        endTime: "2015-01-01 00:00:00",                        // 结束时间 支持时间戳
+        endCallBack: function(){
+          document.getElementById('box').innerHTML = "倒计时结束！";
+        }
+      });
+  </script>
+</body>
+</html>
