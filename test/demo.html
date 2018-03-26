@@ -1,0 +1,36 @@
+<!doctype htm l>
+<html>
+<head>
+  <style>
+  img,.test {
+    display: none;
+    width: 100px;
+    height: 100px;
+  }
+  input:checked + img,input:checked + .test {
+    display: block;
+  }
+  input {
+    position: absolute;
+    left: -9999px;
+  }
+  label {
+    cursor: pointer;
+  }
+  </style>
+</head>
+<body>
+  <div id="cont">
+    <input id="img1" name="img" type="radio" checked="checked">
+    <!-- <img src="a.png"> -->
+    <span class="test">1</span>
+    <input id="img2" name="img" type="radio">
+    <!-- <img src="b.png"> -->
+    <span class="test">2</span>
+  </div>
+  <div id="nav">
+    <label for="img1">第一张</label>
+    <label for="img2">第二张</label>
+  </div>
+</body>
+</html>

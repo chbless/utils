@@ -1,0 +1,12 @@
+{
+  "name": "quicksort",
+  "version": "1.0.0",
+  "description": "js 快速排序",
+  "keywords": [
+    "快排",
+    "quicksort",
+    "sort",
+    "utils",
+    "组件"
+  ]
+}
